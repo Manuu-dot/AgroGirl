@@ -2,12 +2,13 @@
 /* as cores, os tamanhos e as fontes do seu site ficam por aqui. */
 /* dica: mude uma coisa de cada vez e confira o resultado! */
 
+
 :root {
   /* 🎨 quer mudar as cores do site? comece por aqui! */
-  --cor-fundo: #faf8f4;        /* cor do fundo principal */
-  --cor-texto: #272333;        /* cor da fonte principal */
+  --cor-fundo: #f7f6f8;        /* cor do fundo principal */
+  --cor-texto: #91d840e3;        /* cor da fonte principal */
   --cor-destaque: #7959ae;     /* cor de títulos, detalhes e botões */
-  --cor-destaque-clara: #ece5fa; /* cor dos elementos delicados */
+  --cor-destaque-clara: #917cb3; /* cor dos elementos delicados */
   --cor-cartao: #ffffff;       /* cor dos cards */
   --cor-linha: #ddd5e4;        /* cor de bordas e linhas */
   --cor-suave: #6e6876;        /* cor de textos menores */
@@ -34,7 +35,14 @@ nav a:hover, .rodape a:hover { color: var(--cor-destaque); }
 .estrelinha { font-size: 1.1rem; margin-right: 6px; }
 h1,h2,h3,p { margin-top: 0; }
 h1,h2 { letter-spacing: -.055em; line-height: 1.12; }
-h1 { font-size: clamp(3.25rem, 6.5vw, 5.7rem); margin: 20px 0 26px; font-weight: 800; }
+
+h1 {
+  font-family: "Tangerine", cursive;
+  font-size: clamp(3.25rem, 6.5vw, 5.7rem);
+  margin: 20px 0 26px;
+  font-weight: 700;
+}
+
 h1 .destaque { color: var(--cor-destaque); display: inline-block; }
 .asterisco { font-size: .47em; vertical-align: top; margin-left: 5px; }
 .descricao-hero { max-width: 465px; font-size: 1.17rem; color: var(--cor-suave); }
@@ -52,7 +60,7 @@ h1 .destaque { color: var(--cor-destaque); display: inline-block; }
 .cartao-perfil { width: 274px; height: 345px; background: var(--cor-destaque-clara); border: 1px solid var(--cor-linha); border-radius: 145px 145px 16px 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 21px 20px 0 rgba(121,89,174,.1); transform: rotate(-5deg); position: relative; }
 .cartao-icone { position: absolute; top: 43px; font-weight: 800; font-size: 1rem; color: var(--cor-destaque); }
 .iniciais { font-family: Georgia,serif; font-size: 7rem; line-height: 1; letter-spacing: -.11em; color: var(--cor-destaque); padding-right: .1em; }
-.cartao-legenda { position: absolute; bottom: 54px; font-size: .73rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 800; }
+.cartao-legenda { position: absolute; bottom: 54px; font-size: 1.73rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 800; }
 .spark { position: absolute; color: var(--cor-destaque); font-size: 42px; z-index: 1; }
 .spark-um { top: 48px; right: 33px; }
 .spark-dois { left: 17px; bottom: 69px; }
@@ -67,7 +75,7 @@ h2 em { font-family: Georgia,serif; font-weight: 400; color: var(--cor-destaque)
 .interesses { margin-top: 30px; border-top: 1px solid var(--cor-linha); padding-top: 22px; }
 .interesses>span { display: block; font-weight: 800; margin-bottom: 14px; font-size: .83rem; }
 .tags,.lista-habilidades { display: flex; flex-wrap: wrap; gap: 10px; }
-.tags span { padding: 6px 13px; background: rgba(255,255,255,.7); border: 1px solid var(--cor-linha); border-radius: 100px; font-size: .84rem; }
+.tags span { padding: 6px 13px; background: rgba(140, 102, 165, 0.829); border: 1px solid var(--cor-linha); border-radius: 100px; font-size: .84rem; }
 
 .secao-projetos { padding-block: 105px 115px; }
 .cabecalho-secao { display: flex; justify-content: space-between; align-items: end; gap: 30px; margin-bottom: 40px; }
